@@ -129,7 +129,7 @@ For more details, refer to the `Composer Configuration` section.
 ![Composer Patch Creator - Help](https://github.com/MagePsycho/composer-patch-creator/raw/main/docs/composer-patch-creator-help.png "Composer Patch Creator - Help")
 *Fig: Out of help command*
 
-![Composer Patch Creator - Creator](hhttps://github.com/MagePsycho/composer-patch-creator/raw/main/docs/composer-patch-creator-in-action.png "Composer Patch Creator - Creator")
+![Composer Patch Creator - Creator](https://github.com/MagePsycho/composer-patch-creator/raw/main/docs/composer-patch-creator-in-action.png "Composer Patch Creator - Creator")
 *Fig: patch command in action*
 
 ## 🔍 How It Works
