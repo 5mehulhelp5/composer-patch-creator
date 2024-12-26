@@ -23,6 +23,14 @@ git diff ./vendor/{vendor}/{package}/file1.php ./vendor/{vendor}/{package}/file2
 git restore ./vendor/{vendor}/{package}/file1.php ./vendor/{vendor}/{package}/file2.php ...
 git reset HEAD ./vendor/{vendor}/{package}/file1.php ./vendor/{vendor}/{package}/file2.php ...
 
+# OR
+# If you are using diff command
+# cp ./vendor/{vendor}/{package}/file.php ./vendor/{vendor}/{package}/file.php.old
+# {perform required changes on file.php}
+# diff -u ./vendor/{vendor}/{package}/file.php.old ./vendor/{vendor}/{package}/file.php > patches/{patch-name}.patch
+# rm ./vendor/{vendor}/{package}/file.php
+# mv ./vendor/{vendor}/{package}/file.php.old ./vendor/{vendor}/{package}/file.php
+
 # Manually update composer.json
 # "extra": {
 #     "patches": {
