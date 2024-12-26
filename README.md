@@ -23,8 +23,7 @@ git diff ./vendor/{vendor}/{package}/file1.php ./vendor/{vendor}/{package}/file2
 git restore ./vendor/{vendor}/{package}/file1.php ./vendor/{vendor}/{package}/file2.php ...
 git reset HEAD ./vendor/{vendor}/{package}/file1.php ./vendor/{vendor}/{package}/file2.php ...
 
-# OR
-# If you are using diff command
+# OR If you are using diff command
 # cp ./vendor/{vendor}/{package}/file.php ./vendor/{vendor}/{package}/file.php.old
 # {perform required changes on file.php}
 # diff -u ./vendor/{vendor}/{package}/file.php.old ./vendor/{vendor}/{package}/file.php > patches/{patch-name}.patch
@@ -32,13 +31,13 @@ git reset HEAD ./vendor/{vendor}/{package}/file1.php ./vendor/{vendor}/{package}
 # mv ./vendor/{vendor}/{package}/file.php.old ./vendor/{vendor}/{package}/file.php
 
 # Manually update composer.json
-# "extra": {
-#     "patches": {
-#         "{vendor}/{package}": {
-#             "{patch-message}": "patches/{patch-name}.patch",
-#         },
-#     }
-# }
+"extra": {
+    "patches": {
+        "{vendor}/{package}": {
+            "{patch-message}": "patches/{patch-name}.patch",
+        },
+    }
+}
 ```
 
 ### With Composer Patch Creation Utility
@@ -127,7 +126,7 @@ For more details, refer to the `Composer Configuration` section.
 
 ### In Action (Screenshots)
 ![Composer Patch Creator - Help](https://github.com/MagePsycho/composer-patch-creator/raw/main/docs/composer-patch-creator-help.png "Composer Patch Creator - Help")
-*Fig: Out of help command*
+*Fig: help command*
 
 ![Composer Patch Creator - Creator](https://github.com/MagePsycho/composer-patch-creator/raw/main/docs/composer-patch-creator-in-action.png "Composer Patch Creator - Creator")
 *Fig: patch command in action*
