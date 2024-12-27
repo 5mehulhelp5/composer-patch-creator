@@ -125,7 +125,7 @@ Once the script execution is complete, run the `composer install` command to app
 For more details, refer to the `Composer Configuration` section.
 
 > [!CAUTION]
-> Only edit the files **after you run the command**.
+> Only edit the files **after you run the command**.  
 > Changes made prior to running the command won't be detected.
 
 ### In Action (Screenshots)
