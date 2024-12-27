@@ -124,9 +124,9 @@ sudo mv cpc.sh /usr/local/bin/cpc
 Once the script execution is complete, run the `composer install` command to apply the patches.  
 For more details, refer to the `Composer Configuration` section.
 
-## ⚠️ Caution
-Only edit the files **after you run the command**.  
-$\color{red}{\textsf{Changes made prior to running the command won't be detected.}}$
+> [!CAUTION]
+> Only edit the files **after you run the command**.
+> Changes made prior to running the command won't be detected.
 
 ### In Action (Screenshots)
 ![Composer Patch Creator - Help](https://github.com/MagePsycho/composer-patch-creator/raw/main/docs/composer-patch-creator-help.png "Composer Patch Creator - Help")
