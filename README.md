@@ -126,7 +126,7 @@ For more details, refer to the `Composer Configuration` section.
 
 ## ⚠️ Caution
 Only edit the files **after you run the command**.  
-<span style="color: red; font-weight: bold;">Changes made prior to running the command won't be detected.</span>
+$\color{red}{\textsf{Changes made prior to running the command won't be detected.}}$
 
 ### In Action (Screenshots)
 ![Composer Patch Creator - Help](https://github.com/MagePsycho/composer-patch-creator/raw/main/docs/composer-patch-creator-help.png "Composer Patch Creator - Help")
