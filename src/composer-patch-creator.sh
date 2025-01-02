@@ -151,6 +151,7 @@ update_composer_json() {
         # If no patch message, just add the patch file directly
         jq --arg vendor "$vendor/$package" \
            --arg patch_file "$patch_file" \
+           --indent 4 \
            '.extra.patches[$vendor] += [$patch_file]' \
            "$CONFIG_COMPOSER_FILE" > "${CONFIG_COMPOSER_FILE}.tmp" && \
         mv "${CONFIG_COMPOSER_FILE}.tmp" "$CONFIG_COMPOSER_FILE"
@@ -159,6 +160,7 @@ update_composer_json() {
         jq --arg vendor "$vendor/$package" \
            --arg patch_file "$patch_file" \
            --arg patch_description "$patch_description" \
+           --indent 4 \
            '.extra.patches[$vendor] += {($patch_description): $patch_file}' \
            "$CONFIG_COMPOSER_FILE" > "${CONFIG_COMPOSER_FILE}.tmp" && \
         mv "${CONFIG_COMPOSER_FILE}.tmp" "$CONFIG_COMPOSER_FILE"
