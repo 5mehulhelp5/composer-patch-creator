@@ -76,7 +76,7 @@ cpc {vendor}/{package} -n {patch-name}.patch -m {patch-message}
 - `composer`
 - `jq`
 - Standard Unix tools (`cp`, `mkdir`, `sed`, `date`)
-- Composer Patches Plugin: `cweagans/composer-patches`
+- Composer Patches Plugin: `cweagans/composer-patches` / `vaimo/composer-patches`
 
 ### Supported Environments
 - Linux
@@ -121,7 +121,7 @@ sudo mv cpc.sh /usr/local/bin/cpc
 - `-n, --name`: Specify custom patch filename
 - `-m, --message`: Add patch description
 
-Once the script execution is complete, run the `composer install` command to apply the patches.  
+Once the script execution is complete, run the `composer install` [ or `composer patch apply` if using `vaimo/composer-patches` ] command to apply the patches.  
 For more details, refer to the `Composer Configuration` section.
 
 > [!CAUTION]
